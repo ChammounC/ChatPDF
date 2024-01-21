@@ -4,8 +4,8 @@ import Link from "next/link";
 import {LogIn} from 'lucide-react';
 import FileUpload from "@/components/FileUpload";
 
-export default async function Home() {
-    const { userId } = await auth();
+export default function Home() {
+    const { userId } = auth();
     const isAuth = !!userId;
     return (
         <div className="w-screen min-h-screen bg-gradient-to-r from-blue-100 via-blue-300 to-blue-400">
